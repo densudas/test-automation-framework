@@ -1,13 +1,10 @@
 package io.github.densudas.selenium.pages.indexpage;
 
-import static io.github.densudas.selenium.utils.Utils.waitForElementToBeDisplayed;
-
-import io.github.densudas.selenium.controls.Link;
-import io.github.densudas.selenium.controls.TextField;
-import io.github.densudas.selenium.modals.PersonalDataModal;
 import io.github.densudas.selenium.pages.BasePage;
 import io.github.densudas.selenium.utils.DriverFactory;
 import org.openqa.selenium.By;
+
+import static io.github.densudas.selenium.utils.Utils.waitForElementToBeDisplayed;
 
 public class HomePage extends BasePage<HomePage> {
 
@@ -20,24 +17,4 @@ public class HomePage extends BasePage<HomePage> {
         return new HomePage();
     }
 
-    public PersonalDataModal<HomePage> focusOnPersonalDataModal() {
-        return new PersonalDataModal<>(this);
-    }
-
-    public HomePage clickSearch() throws Exception {
-        Thread.sleep(1000);
-        new Link(this, LinkLabel.SEARCH_BBC).findControl().click();
-        return this;
-    }
-
-    public HomePage fillInSearchField(String text) throws Exception {
-        Thread.sleep(1000);
-        new TextField(this, TextFieldLabel.SEARCH).findControl().fillIn(text);
-        return this;
-    }
-
-    @Override
-    public String getLocation() {
-        return this.getClass().getSimpleName();
-    }
 }

@@ -1,6 +1,5 @@
 package io.github.densudas;
 
-import io.github.densudas.selenium.utils.ControlsStorage;
 import io.github.densudas.selenium.utils.DriverFactory;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -13,8 +12,7 @@ public class BaseTest {
     }
 
     @AfterSuite
-    public void tearDown() throws Exception {
-        ControlsStorage.writeStoragesToFile();
+    public void tearDown() {
         DriverFactory.closeAllDrivers();
     }
 }
