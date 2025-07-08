@@ -1,0 +1,12 @@
+<suite name="TestAutomationFrameworkSuite" parallel="tests" thread-count="2">
+    <test name="SeleniumTests">
+        <classes>
+            <class name="io.github.densudas.SeleniumFeaturesTest"/>
+        </classes>
+    </test>
+    <test name="RestAssuredTests">
+        <classes>
+            <class name="io.github.densudas.RestAssuredFeaturesTest"/>
+        </classes>
+    </test>
+</suite>

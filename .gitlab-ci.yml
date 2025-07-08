@@ -1,0 +1,22 @@
+image: maven:3.9-eclipse-temurin-21
+
+stages:
+  - build
+  - test
+
+variables:
+  MAVEN_OPTS: "-Dmaven.repo.local=.m2"
+
+cache:
+  paths:
+    - .m2/
+
+build:
+  stage: build
+  script:
+    - mvn clean compile
+
+test:
+  stage: test
+  script:
+    - mvn test

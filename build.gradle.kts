@@ -8,10 +8,7 @@ plugins {
 }
 
 repositories {
-    mavenLocal()
-    maven {
-        url = uri("https://repo.maven.apache.org/maven2/")
-    }
+    mavenCentral()
 }
 
 dependencies {
@@ -19,6 +16,10 @@ dependencies {
     api(libs.org.seleniumhq.selenium.selenium.java)
     api(libs.io.github.bonigarcia.webdrivermanager)
     api(libs.com.google.guava.guava)
+    implementation(libs.com.microsoft.playwright.playwright)
+    testImplementation(platform(libs.org.junit.bom))
+    testImplementation(libs.org.junit.jupiter)
+    testImplementation(libs.io.rest.assured.rest.assured)
 }
 
 group = "io.github.densudas"
@@ -33,5 +34,5 @@ publishing {
 }
 
 tasks.named<Test>("test") {
-    useTestNG()
+    useJUnitPlatform()
 }
