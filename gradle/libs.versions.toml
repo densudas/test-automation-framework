@@ -2,13 +2,17 @@
 # https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format
 
 [versions]
-com-google-guava-guava = "32.1.3-jre"
-io-github-bonigarcia-webdrivermanager = "5.6.2"
-org-seleniumhq-selenium-selenium-java = "4.15.0"
-org-testng-testng = "7.8.0"
+guava = "33.5.0-jre"
+webdrivermanager = "6.3.3"
+selenium-java = "4.41.0"
+testng = "7.12.0"
+playwright = "1.58.0"
+restassured = "6.0.0"
 
 [libraries]
-com-google-guava-guava = { module = "com.google.guava:guava", version.ref = "com-google-guava-guava" }
-io-github-bonigarcia-webdrivermanager = { module = "io.github.bonigarcia:webdrivermanager", version.ref = "io-github-bonigarcia-webdrivermanager" }
-org-seleniumhq-selenium-selenium-java = { module = "org.seleniumhq.selenium:selenium-java", version.ref = "org-seleniumhq-selenium-selenium-java" }
-org-testng-testng = { module = "org.testng:testng", version.ref = "org-testng-testng" }
+guava = { module = "com.google.guava:guava", version.ref = "guava" }
+webdrivermanager = { module = "io.github.bonigarcia:webdrivermanager", version.ref = "webdrivermanager" }
+selenium-java = { module = "org.seleniumhq.selenium:selenium-java", version.ref = "selenium-java" }
+testng = { module = "org.testng:testng", version.ref = "testng" }
+playwright = { module = "com.microsoft.playwright:playwright", version.ref = "playwright" }
+restassured = { module = "io.rest-assured:rest-assured", version.ref = "restassured" }
