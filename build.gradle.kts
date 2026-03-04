@@ -12,14 +12,15 @@ repositories {
 }
 
 dependencies {
-    api(libs.org.testng.testng)
-    api(libs.org.seleniumhq.selenium.selenium.java)
-    api(libs.io.github.bonigarcia.webdrivermanager)
-    api(libs.com.google.guava.guava)
+    implementation(libs.testng)
+    implementation(libs.org.seleniumhq.selenium.selenium.java)
+//    implementation(libs.io.github.bonigarcia.webdrivermanager)
+    implementation(libs.guava)
     implementation(libs.com.microsoft.playwright.playwright)
     testImplementation(platform(libs.org.junit.bom))
     testImplementation(libs.org.junit.jupiter)
-    testImplementation(libs.io.rest.assured.rest.assured)
+    //testImplementation(libs.io.rest.assured.rest.assured)
+    testImplementation(libs.restassured)
 }
 
 group = "io.github.densudas"
