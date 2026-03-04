@@ -13,14 +13,12 @@ repositories {
 
 dependencies {
     implementation(libs.testng)
-    implementation(libs.org.seleniumhq.selenium.selenium.java)
-//    implementation(libs.io.github.bonigarcia.webdrivermanager)
+    implementation(libs.selenium)
+    implementation(libs.webdrivermanager)
     implementation(libs.guava)
-    implementation(libs.com.microsoft.playwright.playwright)
-    testImplementation(platform(libs.org.junit.bom))
-    testImplementation(libs.org.junit.jupiter)
-    //testImplementation(libs.io.rest.assured.rest.assured)
-    testImplementation(libs.restassured)
+    implementation(libs.playwright)
+    testImplementation(libs.junit.jupiter)
+    testImplementation(libs.rest.assured)
 }
 
 group = "io.github.densudas"

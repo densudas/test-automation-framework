@@ -1,22 +1,20 @@
 [versions]
 guava = "33.5.0-jre"
 webdrivermanager = "6.3.3"
-selenium-java = "4.41.0"
+selenium = "4.41.0"
 testng = "7.12.0"
 playwright = "1.58.0"
-restassured = "6.0.0"
-org-junit-jupiter = "5.10.0"
-org-junit-bom = "5.10.0"
+rest-assured = "6.0.0"
+junit-jupiter = "6.0.3"
 
 [libraries]
 guava = { module = "com.google.guava:guava", version.ref = "guava" }
 webdrivermanager = { module = "io.github.bonigarcia:webdrivermanager", version.ref = "webdrivermanager" }
-selenium-java = { module = "org.seleniumhq.selenium:selenium-java", version.ref = "selenium-java" }
+selenium = { module = "org.seleniumhq.selenium:selenium-java", version.ref = "selenium" }
 testng = { module = "org.testng:testng", version.ref = "testng" }
 playwright = { module = "com.microsoft.playwright:playwright", version.ref = "playwright" }
-restassured = { module = "io.rest-assured:rest-assured", version.ref = "restassured" }
-org-junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "org-junit-jupiter" }
-org-junit-bom = { module = "org.junit:junit-bom", version.ref = "org-junit-bom" }
+rest-assured = { module = "io.rest-assured:rest-assured", version.ref = "rest-assured" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit-jupiter" }
 
 [bundles]
 
