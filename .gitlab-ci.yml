@@ -1,22 +1,23 @@
-image: maven:3.9-eclipse-temurin-21
+image: gradle:eclipse-temurin:21
 
 stages:
   - build
   - test
 
 variables:
-  MAVEN_OPTS: "-Dmaven.repo.local=.m2"
+  GRADLE_USER_HOME: "$CI_PROJECT_DIR/.gradle"
 
 cache:
   paths:
-    - .m2/
+    - .gradle/caches/
+    - .gradle/wrapper/
 
 build:
   stage: build
   script:
-    - mvn clean compile
+    - ./gradlew clean compileJava --no-daemon
 
 test:
   stage: test
   script:
-    - mvn test
+    - ./gradlew test --no-daemon
