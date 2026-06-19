@@ -24,7 +24,7 @@ dependencies {
 group = "io.github.densudas"
 version = "1.0-SNAPSHOT"
 description = "automation-testing-framework"
-java.sourceCompatibility = JavaVersion.VERSION_21
+java.sourceCompatibility = JavaVersion.VERSION_25
 
 publishing {
     publications.create<MavenPublication>("maven") {

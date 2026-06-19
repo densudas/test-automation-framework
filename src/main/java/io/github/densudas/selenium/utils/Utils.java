@@ -34,8 +34,8 @@ public class Utils {
 
     public static JavascriptExecutor getJSExecutor() {
         WebDriver driver = DriverFactory.getDriver();
-        if (driver instanceof JavascriptExecutor)
-            return (JavascriptExecutor) driver;
+        if (driver instanceof JavascriptExecutor javascriptexecutor)
+            return javascriptexecutor;
         else
             throw new ClassCastException("The WebDriver returned is not a JavascriptExecutor");
     }

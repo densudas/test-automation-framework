@@ -41,7 +41,7 @@ See [RestAssuredFeaturesTest.java](src/test/java/io/github/densudas/restassured/
 ### Docker
 This project includes a [Dockerfile](Dockerfile) for containerization, which:
 - Uses Selenium's standalone Chrome image
-- Installs Maven and JDK 21
+- Installs Maven and JDK 25
 - Builds and runs tests in a containerized environment
 
 ### CI/CD Integration
@@ -60,7 +60,7 @@ The project includes a [GitHub Actions workflow](.github/workflows/maven.yml) fo
 
 #### Jenkins
 The project includes a [Jenkinsfile](Jenkinsfile) for Jenkins CI/CD integration, which:
-- Uses a Docker container with Maven and JDK 21
+- Uses a Docker container with Maven and JDK 25
 - Builds the project
 - Runs tests
 - Collects and publishes test reports
@@ -68,7 +68,7 @@ The project includes a [Jenkinsfile](Jenkinsfile) for Jenkins CI/CD integration,
 ## Getting Started
 
 ### Prerequisites
-- JDK 21
+- JDK 25
 - Maven 3.9+
 - Docker (optional, for containerized execution)
 

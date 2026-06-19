@@ -1,4 +1,4 @@
-image: gradle:eclipse-temurin:21
+image: gradle:eclipse-temurin:25
 
 stages:
   - build

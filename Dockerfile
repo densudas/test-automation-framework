@@ -10,7 +10,7 @@ RUN apt-get -qqy update && apt-get install -qqy \
     curl \
     unzip \
     maven \
-    openjdk-21-jdk \
+    openjdk-25-jdk \
     && rm -rf /var/lib/apt/lists/*
 
 # Set the working directory
